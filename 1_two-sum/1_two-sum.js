@@ -18,13 +18,24 @@ const twoSum = (nums, target) => {
 };
 const twoSumPaulo = (nums, target) => {
     const numsMap = {};
-    const answer = [];
     numsMap[nums[0]] = 0;
     for (let i = 1; i < nums.length; i++) {
         const pairValue = target - nums[i];
         if (pairValue in numsMap) {
-            answer.push(numsMap[pairValue], i);
+            return [numsMap[pairValue], i];
         }
+        numsMap[nums[i]] = i;
     }
-    return answer;
 };
+function twoSumAlexJ(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        let targetSecondNumber = target - nums[i];
+        for (let j = 0; j < nums.length; j++) {
+            if (i === j)
+                continue;
+            if (nums[j] === targetSecondNumber)
+                return [i, j];
+        }
+        continue;
+    }
+}

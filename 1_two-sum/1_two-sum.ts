@@ -17,9 +17,8 @@ const twoSum = (nums: number[], target: number): number[] => {
   return answer;
 };
 
-const twoSumPaulo = (nums: number[], target: number): number[] => {
+const twoSumPaulo = (nums: number[], target: number): number[] | void => {
   const numsMap: Record<number, number> = {};
-  const answer: number[] = [];
 
   numsMap[nums[0]] = 0;
 
@@ -27,8 +26,19 @@ const twoSumPaulo = (nums: number[], target: number): number[] => {
     const pairValue: number = target - nums[i];
 
     if (pairValue in numsMap) {
-      answer.push(numsMap[pairValue], i);
+      return [numsMap[pairValue], i];
     }
+    numsMap[nums[i]] = i;
   }
-  return answer;
 };
+
+function twoSumAlexJ(nums: number[], target: number): number[] | void {
+  for (let i = 0; i < nums.length; i++) {
+    let targetSecondNumber: number = target - nums[i];
+    for (let j = 0; j < nums.length; j++) {
+      if (i === j) continue;
+      if (nums[j] === targetSecondNumber) return [i, j];
+    }
+    continue;
+  }
+}

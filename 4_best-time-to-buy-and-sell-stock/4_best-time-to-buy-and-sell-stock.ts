@@ -15,4 +15,14 @@ const maxProfit = (prices: number[]): number => {
   return Math.max(...maxProfitArr);
 };
 
-console.log(maxProfit([2, 1, 2, 1, 0, 1, 2]));
+const maxProfitChris = (prices: number[]): number => {
+  let max = 0;
+  let answer = 0;
+  for (let i = prices.length - 1; i >= 0; i--) {
+    answer = Math.max(answer, max - prices[i]);
+    if (prices[i] > max) {
+      max = prices[i];
+    }
+  }
+  return answer;
+};

@@ -13,4 +13,14 @@ var maxProfit = function (prices) {
     }
     return Math.max.apply(Math, maxProfitArr);
 };
-console.log(maxProfit([2, 1, 2, 1, 0, 1, 2]));
+var maxProfitChris = function (prices) {
+    var max = 0;
+    var answer = 0;
+    for (var i = prices.length - 1; i >= 0; i--) {
+        answer = Math.max(answer, max - prices[i]);
+        if (prices[i] > max) {
+            max = prices[i];
+        }
+    }
+    return answer;
+};

@@ -11,7 +11,7 @@ Created By the author of Blind 75, [Grind 75](https://www.techinterviewhandbook.
 
 
 ## What Language Am I Using?
-- ``.ts``
+- Typescript
 
 ## Started At
 Nov. 7th, 2022<br />

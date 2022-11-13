@@ -10,6 +10,7 @@ Created By the author of Blind 75, [Grind 75](https://www.techinterviewhandbook.
 4. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 5. [Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
 6. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
+7. [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 
 ## What Language Am I Using?
 
@@ -18,4 +19,4 @@ Created By the author of Blind 75, [Grind 75](https://www.techinterviewhandbook.
 ## Started At
 
 Nov. 7th, 2022<br />
-(currently: **6** day streak)
+(currently: **7** day streak)

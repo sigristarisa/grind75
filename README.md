@@ -12,6 +12,10 @@ Created By the author of Blind 75, [Grind 75](https://www.techinterviewhandbook.
 6. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
 7. [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 
+## Week 2
+
+1. [Binary Search](https://leetcode.com/problems/binary-search/)
+
 ## What Language Am I Using?
 
 - Typescript
@@ -19,4 +23,4 @@ Created By the author of Blind 75, [Grind 75](https://www.techinterviewhandbook.
 ## Started At
 
 Nov. 7th, 2022<br />
-(currently: **7** day streak)
+(currently: **8** day streak)
